@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://css.gg/chevron-left.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://css.gg/chevron-right.css" rel="stylesheet" />
+    <title>Carousel</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      img {
+        border-radius: 8px;
+        height: 200px;
+        transform: scale(1.7);
+        box-shadow: 0px 20px 50px 10px rgb(0, 0, 0, 0.3);
+      }
+      .carousel {
+        display: flex;
+        /* align-items: center; */
+        gap: 86px;
+        padding: 32px;
+        padding-left: 86px;
+        border-radius: 8px;
+        width: 800px;
+        margin: 100px auto;
+        background-color: #e03131;
+        position: relative;
+        box-shadow: 10px 0px 60px 15px rgb(0, 0, 0, 0.3);
+      }
+      .testimonial-text {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+      }
+      .btn {
+        background-color: #fff;
+        border: none;
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .btn-icon {
+        color: #e03131;
+        stroke: #e03131;
+      }
+      .btn-right {
+        right: 0;
+        top: 50%;
+        transform: translate(50%, -50%);
+      }
+      .btn-left {
+        left: 0;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .dots {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 32px);
+        display: flex;
+        gap: 12px;
+      }
+      .dot {
+        height: 12px;
+        width: 12px;
+        background-color: #fff;
+        border: 2px solid #e03131;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      .dot-fill {
+        background-color: #e03131;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="carousel">
+      <img src="./Images/benz.jpg" />
+      <blockquote class="testimonial">
+        <p class="testimonial-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+          sed veritatis id velit dolore atque ab, neque nesciunt error molestias
+          nam ex labore voluptatum amet, commodi quasi similique repellendus
+          debitis.
+        </p>
+        <p class="testimonial-author">Peyman Khalili</p>
+      </blockquote>
+      <button class="btn btn-left">
+        <svg
+          class="btn-icon"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16.2426 6.34317L14.8284 4.92896L7.75739 12L14.8285 19.0711L16.2427 17.6569L10.5858 12L16.2426 6.34317Z"
+            fill="currentColor"
+          />
+        </svg>
+      </button>
+      <button class="btn btn-right">
+        <svg
+          class="btn-icon"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M10.5858 6.34317L12 4.92896L19.0711 12L12 19.0711L10.5858 17.6569L16.2427 12L10.5858 6.34317Z"
+            fill="currentColor"
+          />
+        </svg>
+      </button>
+      <div class="dots">
+        <button class="dot dot-fill">&nbsp</button>
+        <button class="dot">&nbsp</button>
+        <button class="dot">&nbsp</button>
+        <button class="dot">&nbsp</button>
+      </div>
+    </div>
+  </body>
+</html>

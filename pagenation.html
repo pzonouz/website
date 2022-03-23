@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/css.gg/icons/all.css" rel="stylesheet" />
+
+    <style>
+      body {
+        display: flex;
+        margin-top: 100px;
+        justify-content: center;
+        font-family: "Inter", sans-serif;
+        color: #495057;
+        /* background-color: #e9ecef; */
+      }
+      .pagenation {
+        padding: 15px 25px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        background-color: white;
+      }
+      .pagenation-item:hover {
+        background-color: #2b8a3e;
+        color: white;
+        cursor: pointer;
+      }
+      .pagenation-item {
+        /* border-radius: 50%; */
+        border: 2px solid #2b8a3e;
+        padding: 5px 10px;
+        text-decoration: none;
+        font-size: 18px;
+        font-style: normal;
+      }
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        border: 1px solid #2b8a3e;
+        /* border-radius: 50%; */
+        /* padding: 15px; */
+        width: 42px;
+        height: 42px;
+      }
+      button:hover {
+        background-color: #2b8a3e;
+        color: white;
+        stroke: white;
+        cursor: pointer;
+      }
+      .icon {
+        color: #2b8a3e;
+        /* stroke: #2b8a3e; */
+        height: 24px;
+        width: 24px;
+      }
+      .selected {
+        background-color: #2b8a3e;
+        color: white;
+        cursor: col-resize;
+      }
+    </style>
+    <title>Pagenation</title>
+  </head>
+  <body>
+    <div class="pagenation">
+      <button>
+        <svg
+          class="icon"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16.2426 6.34317L14.8284 4.92896L7.75739 12L14.8285 19.0711L16.2427 17.6569L10.5858 12L16.2426 6.34317Z"
+            fill="currentColor"
+          />
+        </svg>
+      </button>
+      <i class="pagenation-item">1</i>
+      <i class="pagenation-item">2</i>
+      <i class="pagenation-item selected">3</i>
+      <i class="pagenation-item">4</i>
+      <i class="pagenation-item">5</i>
+      <i class="pagenation-item">6</i>
+      <i class="pagenation-item">...</i>
+      <i class="pagenation-item">23</i>
+      <button>
+        <svg
+          class="icon"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M10.5858 6.34317L12 4.92896L19.0711 12L12 19.0711L10.5858 17.6569L16.2427 12L10.5858 6.34317Z"
+            fill="currentColor"
+          />
+        </svg>
+      </button>
+    </div>
+  </body>
+</html>
